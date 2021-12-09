@@ -1,0 +1,3 @@
+Sitemap: http://www.byggbigger.com/sitemap.xml
+User-agent: *
+Disallow:

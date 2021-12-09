@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<g transform="translate(0 -852.36)" fill-rule="evenodd">
+<rect transform="translate(0 852.36)" width="320" height="200" rx="75" ry="0" fill="#005aad"/>
+<path transform="translate(0 852.36)" d="m100 0v80h-100v40h100v80h40v-80h180v-40h-180v-80h-40z" fill="#ffc200"/>
+</g>
+<metadata>
+<rdf:RDF>
+<cc:Work>
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+<dc:publisher>
+<cc:Agent rdf:about="http://openclipart.org/">
+<dc:title>Openclipart</dc:title>
+</cc:Agent>
+</dc:publisher>
+<dc:title>Swedish Flag</dc:title>
+<dc:date>2012-01-20T01:12:53</dc:date>
+<dc:description>Flag of Sweden in scale which following the international standard</dc:description>
+<dc:source>https://openclipart.org/detail/167253/swedish-flag-by-gadgetscode</dc:source>
+<dc:creator>
+<cc:Agent>
+<dc:title>gadgetscode</dc:title>
+</cc:Agent>
+</dc:creator>
+<dc:subject>
+<rdf:Bag>
+<rdf:li>country</rdf:li>
+<rdf:li>flag</rdf:li>
+<rdf:li>sweden</rdf:li>
+<rdf:li>swedish</rdf:li>
+</rdf:Bag>
+</dc:subject>
+</cc:Work>
+<cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+<cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+<cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+</cc:License>
+</rdf:RDF>
+</metadata>
+</svg>

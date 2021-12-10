@@ -40,7 +40,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', (req, res) => {
-  res.render("swedishcopy",{nonce: stringtwo});
+  res.render("swedish",{nonce: stringtwo});
 });
 app.get('/en', (req, res) => {
   res.render("english",{nonce: stringtwo});

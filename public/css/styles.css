@@ -8,12 +8,6 @@ body{
   box-sizing: border-box;
   font-family: Georgia, Times, serif;
 }
-
-
-.fonts-loaded body {
-	font-family: 'Open Sans', sans-serif;
-}
-
 .ebgar-font{
   font-family: 'EB Garamond', Helvetica, Arial, serif;
 }

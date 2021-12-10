@@ -6,23 +6,7 @@
 				script.nonce  = '"<%=nonce%>"';
 				document.body.appendChild(script);
 }
-;(function () {
-	if (!('fonts' in document)) return;
-	var getCookie = function (name) {
-		var value = "; " + document.cookie;
-		var parts = value.split("; " + name + "=");
-		if (parts.length == 2) return parts.pop().split(";").shift();
-	};
-	if (getCookie('fontsLoaded')) {
-		document.documentElement.className += ' fonts-loaded';
-		return;
-	}
-	document.fonts.load('1rem Open Sans').then(function () {
-		var expires = new Date(+new Date() + (7 * 24 * 60 * 60 * 1000)).toUTCString();
-		document.cookie = 'fontsLoaded=true; expires=' + expires;
-		document.documentElement.className += ' fonts-loaded';
-	});
-})();
+
 $(document).ready(function() {
 
   $("a").click(function(e){

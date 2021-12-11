@@ -835,6 +835,9 @@ font-size: 2rem;
   #contact{
     padding-right: 0;
   }
+.slideshow-caption-body{
+  font-size: 1.5rem;
+}
 }
 @media(max-width: 1050px){
   .contact-us-button{
@@ -904,6 +907,11 @@ font-size: 2rem;
   #services{
     padding: 8vh 15vw 8vh;
   }
+  @media (min-width: 1321px)
+.slideshow-caption-body {
+    font-size: 1.3rem;
+    font-weight: 300!important;
+}
 }
 @media(min-width: 1330px){
   #contact-us{

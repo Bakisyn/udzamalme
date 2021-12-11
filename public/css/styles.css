@@ -9,10 +9,10 @@ body{
   font-family: Georgia, Times, serif;
 }
 .ebgar-font{
-  font-family: 'EB Garamond', Helvetica, Arial, serif;
+  font-family: 'EB Garamond', Georgia, Arial, serif;
 }
 .open-sans{
-  font-family: 'Open Sans',Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 .custom-toggler.navbar-toggler {
   border-color: white;
@@ -52,6 +52,7 @@ bottom: initial;
 .nav-item{
     text-align: center;
 }
+
 .contact-us-button-big {
   padding: 0.25rem 1.4rem 0.25rem 1.4rem;
 }
@@ -64,6 +65,33 @@ bottom: initial;
 .dropdown-pos-large-menu-small-screen {
   margin-top: 2.5rem;
 }
+
+.drop-move-one-xs-lg{
+  position:absolute;
+  top:6rem;
+  right:0;
+}
+.pos-rel{
+  position:relative;
+}
+.drop-move-one-xs-rel{
+  position:absolute;
+  top:0rem;
+  right:0;
+}
+.drop-default{
+  padding: 0.375rem 0.2rem !important;
+  line-height: 0.5 !important;
+}
+
+
+
+
+.drop-move-one-xs-sm{position:absolute;top:3.5rem;right:0}
+
+
+
+
 .pickerbanner{
   width: 35px !important;
   height: 26.25px !important;
@@ -128,10 +156,7 @@ bottom: initial;
   font-size:2rem;
   color: #DBE6FD;
 }
-.drop-default{
-  padding: 0.375rem 0.2rem !important;
-  line-height: 0.5 !important;
-}
+
 .drop-lg-pos{
   position: absolute;
     top: 2rem;

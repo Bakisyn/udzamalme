@@ -46,6 +46,7 @@ function removeSingleClassSvg(elem, className) {
         elem.setAttribute('class', newClass.replace(/^\s+|\s+$/g, ''));
     }
 }
+var timeBarWidth = document.body.clientWidth;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -55,7 +56,6 @@ const contactbutton = document.getElementById("contact-us-button");
 const pick = document.getElementById("pick");
 
 function showMenu() {
-  var timeBarWidth = document.body.clientWidth;
   let navelements = document.getElementsByClassName("nav-item");
   if (timeBarWidth < 1140) {
     if(hasClass(navelements[0], "mx-2")){
@@ -178,7 +178,11 @@ for (var i = 0; i < elements.length; i++) {
       if ("home-link" === e) {
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, 0, 2000, true);
       }else if("contact-title" === e){
-        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
+        if(timeBarWidth < 768){
+          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 75, 2000, true);
+        }else{
+          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
+        }
         document.getElementById("entered-form-name").focus();
       }
       else{

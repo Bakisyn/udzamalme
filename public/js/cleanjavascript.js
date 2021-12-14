@@ -30,24 +30,20 @@ function addClassSvg(elem, className) {
 }
 function removeSingleClassForm(elem, className) {
     var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-    console.log("classes in " +  elem.id + " are " + newClass);
     if (hasClass(elem, className)) {
         while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
             newClass = newClass.replace(' ' + className + ' ', ' ');
         }
         elem.className = newClass.replace(/^\s+|\s+$/g, '');
-        console.log("classes in " +  elem.id + " are " + elem.getAttribute('class'));
     }
 }
 function removeSingleClassSvg(elem, className) {
     var newClass = ' ' + elem.getAttribute('class').replace( /[\t\r\n]/g, ' ') + ' ';
-    console.log("classes in bsvg are " + newClass);
     if (hasClassSvg(elem, className)) {
         while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
             newClass = newClass.replace(' ' + className + ' ', ' ');
         }
         elem.setAttribute('class', newClass.replace(/^\s+|\s+$/g, ''));
-        console.log("classes in bsvg are " + elem.getAttribute("class"));
     }
 }
 
@@ -134,7 +130,6 @@ navbartoggler.addEventListener('click',function(){
     if (hasClass(navbar,"large-navbar")) {
       addClass(pick,"drop-move-one-xs-lg");
     } else {
-      console.log('doesnt have large navbar');
       addClass(pick,"drop-move-one-xs-sm");
     }
   } else {
@@ -180,12 +175,9 @@ for (var i = 0; i < elements.length; i++) {
       e.preventDefault();
       e = this.getAttribute('href');
       let target = document.getElementById(e);
-      console.log("href clicked = " + e);
       if ("home-link" === e) {
-        console.log('clicked home');
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, 0, 2000, true);
       }else if("contact-title" === e){
-        console.log("conteeect");
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 100, 2000, true);
         document.getElementById("entered-form-name").focus();
       }
@@ -205,7 +197,6 @@ form[0].addEventListener('submit',function(options){
   let allPanels = document.getElementById("send-message");
   let undoEl = document.getElementById("bspan");
   let lolz = document.getElementById("bsvg");
-  console.log("id of bsvg = " + lolz.id);
   options = {
     name : inputel.value,
     email : t.value,
@@ -226,7 +217,6 @@ form[0].addEventListener('submit',function(options){
       contacttitle = document.getElementById('contactForm');
       // animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, contacttitle.offsetTop, 2000, true);
       setTimeout(function() {
-        console.log("timeout executing");
         removeSingleClassForm(allPanels,"msg-focus");
         removeSingleClassForm(undoEl,"span-focus");
         removeSingleClassSvg(lolz,"svg-focus");

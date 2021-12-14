@@ -159,7 +159,7 @@ function animate(elem, style, unit, from, to, time, prop) {
       if (step === 1) {
         clearInterval(timer);
       }
-    }, 25);
+    }, 3);
   if (prop) {
     elem[style] = from + unit;
   } else {
@@ -178,7 +178,7 @@ for (var i = 0; i < elements.length; i++) {
       if ("home-link" === e) {
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, 0, 2000, true);
       }else if("contact-title" === e){
-        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 100, 2000, true);
+        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
         document.getElementById("entered-form-name").focus();
       }
       else{

@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
   res.render("swedish",{nonce: stringtwo});
 });
 app.get('/en', (req, res) => {
-  res.render("english",{nonce: stringtwo});
+  res.render("englishcopy",{nonce: stringtwo});
 });
 app.get('/notfound', (req, res) => {
   res.render("notfound",{nonce: stringtwo});

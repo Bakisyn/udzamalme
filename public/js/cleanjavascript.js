@@ -46,16 +46,17 @@ function removeSingleClassSvg(elem, className) {
         elem.setAttribute('class', newClass.replace(/^\s+|\s+$/g, ''));
     }
 }
-var timeBarWidth = document.body.clientWidth;
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
-
+var timeBarWidth = window.innerWidth;
 const navbar = document.getElementById("navbar");
 const logo = document.getElementById("logo");
 const contactbutton = document.getElementById("contact-us-button");
 const pick = document.getElementById("pick");
 
 function showMenu() {
+  timeBarWidth = window.innerWidth;
   let navelements = document.getElementsByClassName("nav-item");
   if (timeBarWidth < 1140) {
     if(hasClass(navelements[0], "mx-2")){
@@ -98,15 +99,14 @@ function showMenu() {
     } else {
       addClass(pick,"drop-move-one-xs-sm");
     }
-  } else {
-    if (768 <= timeBarWidth && timeBarWidth < 1050) {
+  } else if(768 <= timeBarWidth && timeBarWidth < 1050) {
       removeClass(pick);
       if (hasClass(navbar,"large-navbar")) {
         addClass(pick,"drop-move-one-lg");
       } else {
         addClass(pick,"drop-move-one-sm");
       }
-    } else {
+  } else {
       removeClass(pick);
       if (hasClass(navbar,"large-navbar")) {
         addClass(pick,"drop-lg-pos");
@@ -114,7 +114,6 @@ function showMenu() {
         addClass(pick,"drop-small-menu");
       }
     }
-  }
 }
 let aelements = document.getElementsByTagName("a");
 for (var i = 0; i < aelements.length; i++) {
@@ -182,8 +181,8 @@ for (var i = 0; i < elements.length; i++) {
           animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 75, 2000, true);
         }else{
           animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
+          document.getElementById("entered-form-name").focus();
         }
-        // document.getElementById("entered-form-name").focus();
       }
       else{
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 100, 2000, true);
@@ -281,7 +280,7 @@ window.addEventListener('scroll',function(){
     }
     if (767 < i && i < 1050) {
       addClass(pick,"drop-move-one-lg");
-    } 
+    }
     if (1050 <= i) {
       addClass(pick,"drop-lg-pos");
     }

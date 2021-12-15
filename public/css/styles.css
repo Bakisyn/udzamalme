@@ -906,6 +906,23 @@ font-size: 2rem;
     font-size: 1.8rem;
 }
 }
+@media(min-width: 1266px){
+  #contact{
+    padding:0 !important;
+    margin-right:0rem;
+    margin-left:1rem;
+    width:40%;
+  }
+  .contact-us-position{
+    margin-left:3rem;
+  }
+  .form-column{
+    margin-left:1.5rem;
+  }
+  #form{
+    margin-left: 3rem;
+  }
+}
 @media(min-width: 1321px){
   .contact-text{
     max-width: 40ch;

@@ -527,15 +527,13 @@ box-shadow: 0 0px 1px 0px #DBE6FD;
   background-color: #47597E;
   width:100%;
 }
-#services{
-  background-color: #DBE6FD;
-  width: 100% !important;
-}
+#services{background-color:#DBE6FD;width: 100%!important;height:auto!important;}
 #about{
   color: white;
   padding: 5vh 10% 5vh;
   background-color: #47597E;
 }
+.row{width:100%!important;}
 #our-work{
   background-color: #DBE6FD;
   padding: 8vh 10% 8vh;

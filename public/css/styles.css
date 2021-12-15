@@ -351,8 +351,13 @@ transform-style: preserve-3d;
   font-weight:400;
   color: #293B5F;
 }
+.service-image-div{
+  width: 100% !important;
+  height: 100% !important;
+}
 .service-image{
-  width: auto;
+  width: 100%;
+  height: auto;
   margin: 0 auto 0;
 }
 .service-centered{

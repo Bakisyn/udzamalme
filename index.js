@@ -40,10 +40,10 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', (req, res) => {
-  res.render("swedish",{nonce: stringtwo});
+  res.render("swedishlocal",{nonce: stringtwo});
 });
 app.get('/en', (req, res) => {
-  res.render("englishcopy",{nonce: stringtwo});
+  res.render("englishlocal",{nonce: stringtwo});
 });
 app.get('/notfound', (req, res) => {
   res.render("notfound",{nonce: stringtwo});

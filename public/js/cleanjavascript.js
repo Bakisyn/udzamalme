@@ -181,9 +181,9 @@ for (var i = 0; i < elements.length; i++) {
         if(timeBarWidth < 768){
           animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 75, 2000, true);
         }else{
-          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true); 
+          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
         }
-        document.getElementById("entered-form-name").focus();
+        // document.getElementById("entered-form-name").focus();
       }
       else{
         animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 100, 2000, true);

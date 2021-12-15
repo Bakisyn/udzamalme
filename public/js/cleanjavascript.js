@@ -219,7 +219,7 @@ form[0].addEventListener('submit',function(options){
       addClass(undoEl,"span-focus");
       addClassSvg(lolz,"svg-focus");
       contacttitle = document.getElementById('contactForm');
-      // animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, contacttitle.offsetTop, 2000, true);
+      animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, inputel.offsetTop - 150, 200, true);
       setTimeout(function() {
         removeSingleClassForm(allPanels,"msg-focus");
         removeSingleClassForm(undoEl,"span-focus");
@@ -281,7 +281,7 @@ window.addEventListener('scroll',function(){
     }
     if (767 < i && i < 1050) {
       addClass(pick,"drop-move-one-lg");
-    }
+    } 
     if (1050 <= i) {
       addClass(pick,"drop-lg-pos");
     }

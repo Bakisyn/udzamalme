@@ -175,17 +175,17 @@ for (var i = 0; i < elements.length; i++) {
       e = this.getAttribute('href');
       let target = document.getElementById(e);
       if ("home-link" === e) {
-        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, 0, 2000, true);
+        animate(document.scrollingElement || document.documentElement, "scrollTop", "", target.offsetTop, 0, 2000, true);
       }else if("contact-title" === e){
         if(timeBarWidth < 768){
-          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 75, 2000, true);
+          animate(document.scrollingElement || document.documentElement, "scrollTop", "", target.offsetTop, target.offsetTop - 75, 2000, true);
         }else{
-          animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 250, 2000, true);
+          animate(document.scrollingElement || document.documentElement, "scrollTop", "", target.offsetTop, target.offsetTop - 250, 2000, true);
           document.getElementById("entered-form-name").focus();
         }
       }
       else{
-        animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop - 100, 2000, true);
+        animate(document.scrollingElement || document.documentElement, "scrollTop", "", target.offsetTop, target.offsetTop - 100, 2000, true);
       }
     }, false);
 }

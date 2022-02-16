@@ -23,11 +23,11 @@ var randomString = function(length) {
     }
     return text;
 }
-let stringone = "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval' 'nonce-";
+let stringone = "script-src  https: http: 'unsafe-inline' 'nonce-";
 let stringtwo = randomString(12);
-let stringthree = "'  ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'strict-dynamic' 'self' 'nonce-";
-let stringfour ="'; img-src https://www.googletagmanager.com https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net 'self' data: https://storage.byggbigger.com/ 'nonce-";
-let stringfive="'  'strict-dynamic'; connect-src https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net about: 'self' 'strict-dynamic' 'nonce-";
+let stringthree = "' 'strict-dynamic' ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'strict-dynamic' 'self' 'nonce-";
+let stringfour ="'; img-src 'self' data: https://storage.byggbigger.com/ 'nonce-";
+let stringfive="'  'strict-dynamic'; connect-src about: 'self' 'strict-dynamic' 'nonce-";
 let stringsix="'; default-src 'self' 'nonce-";
 let stringseven ="' 'strict-dynamic'; object-src 'self' 'nonce-";
 let stringeight ="'; base-uri 'self'; prefetch-src 'self' 'nonce-";

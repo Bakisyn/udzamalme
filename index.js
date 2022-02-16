@@ -23,7 +23,7 @@ var randomString = function(length) {
     }
     return text;
 }
-let stringone = "script-src  https: http: 'unsafe-inline' 'nonce-";
+let stringone = "script-src  https: http: 'unsafe-inline' https://www.googletagmanager.com 'nonce-";
 let stringtwo = randomString(12);
 let stringthree = "' 'strict-dynamic' ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'strict-dynamic' 'self' 'nonce-";
 let stringfour ="'; img-src www.googletagmanager.com 'self' data: https://storage.byggbigger.com/ 'nonce-";

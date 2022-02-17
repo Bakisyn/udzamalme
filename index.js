@@ -23,13 +23,13 @@ var randomString = function(length) {
     }
     return text;
 }
-let stringone = "script-src  https: http: 'unsafe-inline' 'nonce-";
+let stringone = "script-src  https: http: 'unsafe-inline' 'unsafe-eval' 'nonce-";
 let stringtwo = randomString(12);
-let stringthree = "' 'strict-dynamic' ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'strict-dynamic' 'self' 'nonce-";
+let stringthree = "'  ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'self' 'nonce-";
 let stringfour ="'; img-src 'self' data: https://storage.byggbigger.com/ 'nonce-";
-let stringfive="'  'strict-dynamic'; connect-src about: 'self' 'strict-dynamic' 'nonce-";
+let stringfive="' ; connect-src about: 'self'  'nonce-";
 let stringsix="'; default-src 'self' 'nonce-";
-let stringseven ="' 'strict-dynamic'; object-src 'self' 'nonce-";
+let stringseven ="'; object-src 'self' 'nonce-";
 let stringeight ="'; base-uri 'self'; prefetch-src 'self' 'nonce-";
 let stringnine = "'; font-src 'self'  'nonce-";
 let stringten ="';";

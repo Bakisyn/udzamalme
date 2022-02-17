@@ -23,16 +23,16 @@ var randomString = function(length) {
     }
     return text;
 }
-let stringone = "script-src  https: http: 'unsafe-inline' 'unsafe-eval' 'nonce-";
+let stringone = "script-src  https: http: https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://tagmanager.google.com https://www.google-analytics.com https://ssl.google-analytics.com 'unsafe-inline' 'unsafe-eval' 'nonce-";
 let stringtwo = randomString(12);
-let stringthree = "'  ; style-src https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'self' 'nonce-";
-let stringfour ="'; img-src 'self' data: https://storage.byggbigger.com/ 'nonce-";
-let stringfive="' ; connect-src about: 'self'  'nonce-";
+let stringthree = "'  ; style-src https://tagmanager.google.com https://fonts.googleapis.com https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css 'self' 'nonce-";
+let stringfour ="'; img-src https://ade.googlesyndication.com https://ad.doubleclick.net https://googleads.g.doubleclick.net https://www.google.com https://www.google-analytics.com https://ssl.gstatic.com https://www.gstatic.com www.googletagmanager.com 'self' data: https://storage.byggbigger.com/ 'nonce-";
+let stringfive="' ; connect-src https://www.google-analytics.com about: 'self'  'nonce-";
 let stringsix="'; default-src 'self' 'nonce-";
 let stringseven ="'; object-src 'self' 'nonce-";
 let stringeight ="'; base-uri 'self'; prefetch-src 'self' 'nonce-";
-let stringnine = "'; font-src 'self'  'nonce-";
-let stringten ="';";
+let stringnine = "'; font-src https://fonts.gstatic.com data: 'self'  'nonce-";
+let stringten ="'; frame-src: https://bid.g.doubleclick.net bid.g.doubleclick.net ";
 let cspstring = stringone.concat(stringtwo).concat(stringthree).concat(stringtwo).concat(stringfour).concat(stringtwo).concat(stringfive).concat(stringtwo).concat(stringsix).concat(stringtwo).concat(stringseven).concat(stringtwo).concat(stringeight).concat(stringtwo).concat(stringnine).concat(stringtwo).concat(stringten);
 app.use(function(req, res, next) {
     res.setHeader("Content-Security-Policy", cspstring);

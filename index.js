@@ -32,7 +32,7 @@ let stringsix="'; default-src 'self' 'nonce-";
 let stringseven ="'; object-src 'self' 'nonce-";
 let stringeight ="'; base-uri 'self'; prefetch-src 'self' 'nonce-";
 let stringnine = "'; font-src https://fonts.gstatic.com data: 'self'  'nonce-";
-let stringten ="'; frame-src: https://bid.g.doubleclick.net bid.g.doubleclick.net ";
+let stringten ="'; frame-src: https://bid.g.doubleclick.net ";
 let cspstring = stringone.concat(stringtwo).concat(stringthree).concat(stringtwo).concat(stringfour).concat(stringtwo).concat(stringfive).concat(stringtwo).concat(stringsix).concat(stringtwo).concat(stringseven).concat(stringtwo).concat(stringeight).concat(stringtwo).concat(stringnine).concat(stringtwo).concat(stringten);
 app.use(function(req, res, next) {
     res.setHeader("Content-Security-Policy", cspstring);
